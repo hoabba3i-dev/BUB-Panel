@@ -1,17 +1,3 @@
-<img width="918" height="1583" alt="16615" src="https://github.com/user-attachments/assets/8923c98b-66b6-448e-b6e8-f53885d518c6" />
-<img width="1080" height="1773" alt="16619" src="https://github.com/user-attachments/assets/c2d43377-72f1-4f74-997c-3a50ca5aff9c" />
-<img width="1080" height="1743" alt="16621" src="https://github.com/user-attachments/assets/d9dc5b97-4237-4355-8d1e-03a8b049c11a" />
-<img width="1080" height="1814" alt="16623" src="https://github.com/user-attachments/assets/fe12624e-d0b7-4d58-83e0-13bcf0b82bc8" />
-<img width="1080" height="1565" alt="16627" src="https://github.com/user-attachments/assets/273d0c38-601e-49f5-b52f-3ed8d41db084" />
-<img width="1080" height="1741" alt="16629" src="https://github.com/user-attachments/assets/5d5302e0-f86b-4da9-b779-2263b4b4c9bc" />
-<img width="1080" height="1664" alt="16631" src="https://github.com/user-attachments/assets/90add9a4-4cdc-4ac1-b747-82a504877350" />
-<img width="1080" height="1753" alt="16633" src="https://github.com/user-attachments/assets/e5ebf625-2176-4bc7-a409-4fc8795fb360" />
-<img width="1080" height="1744" alt="16635" src="https://github.com/user-attachments/assets/df45bd6f-9309-43d2-b496-16c4b6f8e246" />
-<img width="1080" height="1686" alt="16637" src="https://github.com/user-attachments/assets/2d4b85c3-0d82-4139-9212-cac3f3329028" />
-<img width="1080" height="1792" alt="16639" src="https://github.com/user-attachments/assets/69462c7b-8703-4476-9ff4-4f53069b78cc" />
-<img width="1080" height="1750" alt="16641" src="https://github.com/user-attachments/assets/faa14824-0600-4014-87ba-ebdfd5e52ab1" />
-<img width="1080" height="1766" alt="16643" src="https://github.com/user-attachments/assets/444d2c7c-eefe-4bf7-a8d0-14faaad44ae8" />
-<img width="1080" height="2092" alt="16645" src="https://github.com/user-attachments/assets/e47e295e-1b6a-4731-96f5-f2b858523c22" />
 <div align="center">
 
 # BUB Panel
@@ -54,11 +40,19 @@
 
 ## English
 
-BUB Panel is a multi-service VPN management platform designed to manage VPN services, users, traffic policies, remote nodes and operational tasks from one web interface and one interactive Manager.
+BUB Panel is a multi-service VPN management platform for VPN services, users, traffic policies, remote nodes and operational tasks from one Web Panel and one interactive terminal Manager.
 
 The public repository contains the installer, documentation, release metadata and verified runtime assets. The complete Go source tree remains private and is not published in the public Git history.
 
 ## Features
+
+### Dashboard
+
+The live dashboard shows system load, network throughput, connection activity and VPN transport state at a glance.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d9dc5b97-4237-4355-8d1e-03a8b049c11a" alt="BUB Panel dashboard" width="820">
+</p>
 
 ### VPN and proxy services
 
@@ -74,6 +68,28 @@ The public repository contains the installer, documentation, release metadata an
 | SoftEther | Managed SoftEther service |
 | Telegram Proxy | Telemt-based proxy management |
 
+#### Service management
+
+Each service is managed independently with its own state, ports and actions.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e5ebf625-2176-4bc7-a409-4fc8795fb360" alt="BUB Panel VPN services overview" width="820">
+</p>
+
+Installation progress is displayed directly on the selected service card while BUB Panel provisions and starts it.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df45bd6f-9309-43d2-b496-16c4b6f8e246" alt="BUB Panel VPN service installation progress" width="820">
+</p>
+
+#### Port management
+
+Variable service ports can be checked and changed from the Port Manager without mixing unrelated targets or transports.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69462c7b-8703-4476-9ff4-4f53069b78cc" alt="BUB Panel port manager" width="820">
+</p>
+
 ### User management
 
 - Create, disable, re-enable and delete users.
@@ -82,6 +98,30 @@ The public repository contains the installer, documentation, release metadata an
 - Client configuration generation and download.
 - Bulk user operations.
 - Active-session handling and reconnect blocking according to service capabilities.
+
+#### Quick user creation
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fe12624e-d0b7-4d58-83e0-13bcf0b82bc8" alt="BUB Panel quick user creation" width="820">
+</p>
+
+#### User list and controls
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/273d0c38-601e-49f5-b52f-3ed8d41db084" alt="BUB Panel user management" width="820">
+</p>
+
+#### User subscription portal
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5d5302e0-f86b-4da9-b779-2263b4b4c9bc" alt="BUB Panel user subscription portal" width="820">
+</p>
+
+#### Traffic and usage
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/faa14824-0600-4014-87ba-ebdfd5e52ab1" alt="BUB Panel traffic and usage statistics" width="820">
+</p>
 
 ### Main + Multi-Node
 
@@ -92,15 +132,27 @@ The public repository contains the installer, documentation, release metadata an
 - Port conflicts are checked on the selected target and transport only.
 - BUB Panel never fixes a conflict by killing an unrelated listener.
 
+#### Add a managed Node
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2d4b85c3-0d82-4139-9212-cac3f3329028" alt="BUB Panel add node" width="820">
+</p>
+
 ### Manager
 
-After installation, open the terminal Manager with:
+Open the terminal Manager with:
 
 ```bash
 BUB-Panel
 ```
 
-The Manager provides service status, start/stop/restart, diagnostics, live logs, service removal, update handling, backup/restore operations and BUB Panel maintenance tasks.
+The Manager provides service status, start/stop/restart, diagnostics, live logs, service removal, updates, backup/restore and maintenance operations.
+
+#### Manager-driven service installation
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8923c98b-66b6-448e-b6e8-f53885d518c6" alt="BUB Panel Manager VPN service installation" width="560">
+</p>
 
 ## Architecture
 
@@ -116,9 +168,9 @@ BUB Panel Main
     └── Node-local runtime / ports
 ```
 
-Remote-node lifecycle operations are intentionally scoped to BUB Panel assets. Unrelated server software and BUB Tunnel services are outside BUB Panel ownership and must not be stopped or removed by BUB Panel maintenance operations.
+Remote-node lifecycle operations are scoped to BUB Panel assets. Unrelated server software and BUB Tunnel services are outside BUB Panel ownership and must not be stopped or removed by BUB Panel maintenance operations.
 
-See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the architecture notes.
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for architecture notes.
 
 ## Requirements
 
@@ -128,66 +180,34 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the architecture notes.
 - `amd64` or `arm64` architecture.
 - Internet access during initial package and service provisioning.
 - For Multi-Node provisioning: SSH reachability from Main to the target Node.
-- For automatic public HTTPS: a domain whose DNS resolves to the Main server and reachable TCP ports `80` and `443`.
+- For automatic public HTTPS: a domain whose DNS resolves to Main plus reachable TCP `80` and `443`.
+
+<a id="quick-install"></a>
 
 ## Quick Install
-
-Install the latest official release on the Main server:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/hoabba3i-dev/BUB-Panel/main/install.sh)
 ```
 
-On a fresh installation, the setup flow is intentionally interactive:
+Fresh setup is interactive and covers database configuration, public host/domain, panel port, Owner credentials, optional custom path and optional Let's Encrypt HTTPS. The installer verifies architecture-specific assets against `SHA256SUMS`, preserves existing database/configuration state during upgrades, starts the panel and prints the final login URL.
 
-```text
-Database setup
-      ↓
-Domain / IP
-      ↓
-Panel port
-      ↓
-Owner username
-      ↓
-Owner password
-      ↓
-Custom panel path? [y/N]
-      ↓
-If a domain is used: Let's Encrypt HTTPS? [Y/n]
-      ↓
-Final installation + service start + health checks
-      ↓
-Final panel URL and login information
-      ↓
-Press Enter
-      ↓
-BUB-Panel Manager
-```
+### Secure web login
 
-The installer downloads the architecture-specific release assets, verifies them against `SHA256SUMS`, preserves existing configuration/database state during upgrades, creates the initial Owner account on a fresh install, starts the panel and prints the final login URL.
+The Web Panel supports password login and Passkey/WebAuthn sign-in on supported secure deployments.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c2d43377-72f1-4f74-997c-3a50ca5aff9c" alt="BUB Panel secure login" width="560">
+</p>
 
 ### Domain and automatic HTTPS
 
-When a domain is entered and automatic HTTPS is accepted, BUB Panel:
-
-- verifies the domain setup required for certificate issuance;
-- configures a dedicated BUB Panel Nginx virtual host;
-- keeps the Go web listener on loopback behind the reverse proxy;
-- obtains a Let's Encrypt certificate;
-- redirects HTTP to HTTPS;
-- enables certificate renewal;
-- uses secure public URLs and secure-cookie behavior;
-- leaves unrelated Nginx virtual hosts untouched.
+When a domain is entered and automatic HTTPS is accepted, BUB Panel configures a dedicated Nginx virtual host, keeps the Go listener on loopback behind the reverse proxy, obtains a Let's Encrypt certificate, redirects HTTP to HTTPS, enables renewal and preserves unrelated Nginx virtual hosts.
 
 Example:
 
 ```text
 https://panel.example.com/
-```
-
-With a custom panel path:
-
-```text
 https://panel.example.com/bub-panel/
 ```
 
@@ -200,54 +220,37 @@ BUB Panel supports:
 - **SQLite** using the pure-Go `modernc.org/sqlite` runtime driver.
 - **PostgreSQL** using `pgx/v5` with a persistent connection pool.
 
-Application queries do not spawn `sqlite3` or `psql` processes. Database CLI tools may still be used by administrative migration, backup or diagnostic scripts when appropriate.
-
 Upgrade paths are designed to preserve database state, users, service assignments, node definitions and BUB Panel configuration.
 
 ## Data safety and ownership
 
-BUB Panel distinguishes between an OS package being present and a service being **BUB-managed**. The Manager should report `INSTALLED` only when BUB Panel ownership/configuration state exists; a pre-existing system package alone is not treated as a BUB-installed service.
+BUB Panel distinguishes between an OS package being present and a service being **BUB-managed**. Full Uninstall and per-service removal are ownership-aware and must preserve unrelated services, packages and listeners when ownership cannot be proven.
 
-Full Uninstall and per-service removal are ownership-aware. BUB Panel must preserve unrelated services, packages and listeners when ownership cannot be proven.
-
-Upgrade and backup paths are designed to preserve:
-
-- PostgreSQL / SQLite state;
-- users and service assignments;
-- node definitions;
-- BUB Panel configuration;
-- OpenVPN PKI, EasyRSA state and CRL;
-- BUB-managed service ownership state;
-- secrets required for restore and disaster recovery.
+Upgrade and backup paths are designed to preserve PostgreSQL/SQLite state, users, service assignments, node definitions, BUB Panel configuration, OpenVPN PKI/CRL, BUB-managed service ownership state and secrets required for restore/disaster recovery.
 
 OpenVPN PKI must never be reinitialized as a shortcut when an existing real CA/PKI is present.
 
+### Backup & Restore
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/444d2c7c-eefe-4bf7-a8d0-14faaad44ae8" alt="BUB Panel backup and restore" width="820">
+</p>
+
 ## Security
 
-BUB Panel includes administrative security controls such as:
-
-- password hashing/derivation;
-- session management and login history;
-- audit events;
-- CSRF validation for cookie-authenticated mutations;
-- SameSite and HttpOnly session cookies;
-- secure-cookie behavior behind trusted HTTPS;
-- login/API rate limiting and brute-force protections;
-- security headers including CSP, frame denial and MIME-sniffing protection;
-- scoped administrative access controls;
-- encrypted backup handling;
-- bounded command execution;
-- explicit node/service targeting.
+BUB Panel includes session management, login history, audit events, CSRF validation, SameSite/HttpOnly cookies, secure-cookie behavior behind trusted HTTPS, login/API rate limiting, brute-force protection, security headers, scoped access controls, encrypted backup handling, bounded command execution and explicit node/service targeting.
 
 Passwords, private keys, API tokens and recovery secrets must never be written to application logs. Security reports should follow [SECURITY.md](SECURITY.md).
 
+### Security Center
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e47e295e-1b6a-4731-96f5-f2b858523c22" alt="BUB Panel Security Center" width="820">
+</p>
+
 ## Updates
 
-Updates are available from **Manager → Update** and use the official GitHub release channel.
-
-The updater downloads architecture-specific binaries and the runtime bundle, verifies SHA-256 checksums before installation and preserves existing database/configuration state.
-
-Check installed versions with:
+Updates are available from **Manager → Update** and use the official GitHub release channel. The updater downloads architecture-specific binaries and the runtime bundle, verifies SHA-256 checksums and preserves existing database/configuration state.
 
 ```bash
 bub-panel --version
@@ -261,14 +264,14 @@ GET /api/health
 GET /api/ready
 ```
 
-`/api/health` reports application/process health. `/api/ready` also probes the configured database and returns HTTP `503` when dependencies required by the panel are not ready.
+`/api/health` reports application/process health. `/api/ready` also probes the configured database and returns HTTP `503` when required dependencies are not ready.
 
 ## Performance notes
 
 - Prefer **WireGuard** when maximum throughput and low CPU usage are the main goals and the protocol is reachable.
 - Prefer **OpenVPN UDP** for lower latency; OpenVPN TCP is useful when UDP is blocked.
-- **AmneziaWG** adds obfuscation-related overhead and is intended for environments where that tradeoff is useful.
-- BUB Panel enables **BBR + fq** only when the host kernel reports BBR support; otherwise the existing congestion-control algorithm is left unchanged.
+- **AmneziaWG** adds obfuscation-related overhead for environments where that tradeoff is useful.
+- BUB Panel enables **BBR + fq** only when the host kernel reports BBR support.
 - Cisco/ocserv remains TCP-only in v0.1.60.
 
 ## Release assets
@@ -288,15 +291,7 @@ Release binaries are produced from the private source tree, stripped/obfuscated 
 
 ## Repository policy
 
-The public repository contains:
-
-- installer;
-- documentation;
-- release metadata;
-- verification workflow;
-- official release assets.
-
-The complete BUB Panel Go source tree is not part of the public Git history. BUB Panel is free to use under the terms in [LICENSE](LICENSE), but it is not presented as an open-source project.
+The public repository contains installer, documentation, release metadata, verification workflow and official release assets. The complete BUB Panel Go source tree is not part of the public Git history. BUB Panel is free to use under [LICENSE](LICENSE), but it is not presented as an open-source project.
 
 ## Documentation
 
@@ -318,6 +313,14 @@ The complete BUB Panel Go source tree is not part of the public Git history. BUB
 
 ### امکانات اصلی
 
+#### داشبورد
+
+داشبورد زنده وضعیت منابع سیستم، سرعت شبکه، اتصال‌ها و وضعیت سرویس‌های VPN را به‌صورت یکجا نمایش می‌دهد.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d9dc5b97-4237-4355-8d1e-03a8b049c11a" alt="داشبورد BUB Panel" width="820">
+</p>
+
 #### سرویس‌های قابل مدیریت
 
 | سرویس | وضعیت / کاربرد |
@@ -327,10 +330,30 @@ The complete BUB Panel Go source tree is not part of the public Git history. BUB
 | AmneziaWG | نسخه سازگار با WireGuard با قابلیت‌های Obfuscation |
 | Cisco / ocserv | حالت TCP |
 | IKEv2 / IPsec | مبتنی بر Runtime مدیریت‌شده strongSwan |
-| L2TP / IPsec | با Runtime مشترک IPsec مدیریت‌شده توسط BUB |
+| L2TP / IPsec | Runtime مشترک IPsec مدیریت‌شده توسط BUB |
 | SSTP | نصب و مدیریت سرویس SSTP |
 | SoftEther | نصب و مدیریت SoftEther |
 | Telegram Proxy | مدیریت Proxy مبتنی بر Telemt |
+
+##### مدیریت سرویس‌های VPN
+
+هر سرویس به‌صورت مستقل با وضعیت، پورت‌ها و عملیات مخصوص خودش مدیریت می‌شود.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e5ebf625-2176-4bc7-a409-4fc8795fb360" alt="نمای کلی سرویس‌های VPN در BUB Panel" width="820">
+</p>
+
+هنگام نصب، روند نصب و راه‌اندازی همان سرویس مستقیماً داخل کارت سرویس نمایش داده می‌شود.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df45bd6f-9309-43d2-b496-16c4b6f8e246" alt="نصب سرویس VPN توسط BUB Panel" width="820">
+</p>
+
+##### مدیریت پورت‌ها
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69462c7b-8703-4476-9ff4-4f53069b78cc" alt="مدیریت پورت‌ها در BUB Panel" width="820">
+</p>
 
 #### مدیریت کاربران
 
@@ -341,9 +364,33 @@ The complete BUB Panel Go source tree is not part of the public Git history. BUB
 - عملیات گروهی روی کاربران.
 - کنترل Session فعال و جلوگیری از Reconnect بر اساس قابلیت هر پروتکل.
 
+##### ساخت سریع کاربر
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fe12624e-d0b7-4d58-83e0-13bcf0b82bc8" alt="ساخت سریع کاربر در BUB Panel" width="820">
+</p>
+
+##### فهرست و مدیریت کاربران
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/273d0c38-601e-49f5-b52f-3ed8d41db084" alt="مدیریت کاربران در BUB Panel" width="820">
+</p>
+
+##### پنل اشتراک کاربر
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5d5302e0-f86b-4da9-b779-2263b4b4c9bc" alt="صفحه اشتراک کاربر BUB Panel" width="820">
+</p>
+
+##### آمار و مصرف ترافیک
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/faa14824-0600-4014-87ba-ebdfd5e52ab1" alt="آمار و مصرف ترافیک در BUB Panel" width="820">
+</p>
+
 ### معماری Main + Multi-Node
 
-یک Main Panel می‌تواند سرویس‌های روی سرور اصلی و چند Node مستقل را مدیریت کند.
+یک Main Panel می‌تواند سرویس‌های روی سرور اصلی و چند Node مستقل را مدیریت کند. هر Node فقط BUB Panel Agent و سرویس‌هایی را اجرا می‌کند که برای همان Node انتخاب شده‌اند و وضعیت عملیات هر سرویس بر اساس **Target + Service** جدا نگه داشته می‌شود.
 
 ```text
 BUB Panel Main
@@ -357,135 +404,85 @@ BUB Panel Main
     └── Port / Runtime همان Node
 ```
 
-هر Node فقط BUB Panel Agent و سرویس‌هایی را اجرا می‌کند که برای همان Node انتخاب شده‌اند. وضعیت و عملیات هر سرویس بر اساس **Target + Service** جدا نگه داشته می‌شود.
-
 استفاده از یک پورت یکسان روی دو Node مختلف مجاز است. بررسی تداخل پورت فقط روی همان Target و Transport انجام می‌شود و BUB Panel برای آزادکردن پورت، سرویس نامرتبط را Kill نمی‌کند.
 
-### نصب سریع
+#### افزودن Node مدیریت‌شده
 
-روی سرور Main این دستور را اجرا کنید:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2d4b85c3-0d82-4139-9212-cac3f3329028" alt="افزودن Node در BUB Panel" width="820">
+</p>
+
+### نصب سریع
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/hoabba3i-dev/BUB-Panel/main/install.sh)
 ```
 
-در نصب Fresh ترتیب Setup به این شکل است:
+در نصب Fresh تنظیم دیتابیس، دامنه/IP، پورت Web Panel، Owner، مسیر اختصاصی پنل و در صورت استفاده از دامنه HTTPS خودکار Let's Encrypt انجام می‌شود. فایل‌های Release قبل از نصب با SHA-256 بررسی می‌شوند و در Upgrade اطلاعات موجود حفظ می‌شوند.
 
-```text
-تنظیم دیتابیس
-      ↓
-دامنه یا IP
-      ↓
-پورت Web Panel
-      ↓
-نام کاربری Owner
-      ↓
-رمز عبور Owner
-      ↓
-آیا Panel Path اختصاصی نیاز دارید؟ [y/N]
-      ↓
-اگر دامنه وارد شده باشد: HTTPS خودکار با Let's Encrypt؟ [Y/n]
-      ↓
-نصب نهایی + Start سرویس + Health Check
-      ↓
-نمایش URL و اطلاعات ورود
-      ↓
-Enter
-      ↓
-ورود به BUB-Panel Manager
-```
-
-بعد از نصب، هر زمان خواستید Manager را باز کنید:
+بعد از نصب Manager را با دستور زیر باز کنید:
 
 ```bash
 BUB-Panel
 ```
 
+#### نصب سرویس از Manager
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8923c98b-66b6-448e-b6e8-f53885d518c6" alt="نصب سرویس VPN از Manager BUB Panel" width="560">
+</p>
+
+#### ورود امن به Web Panel
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c2d43377-72f1-4f74-997c-3a50ca5aff9c" alt="صفحه ورود امن BUB Panel" width="560">
+</p>
+
 ### دامنه و HTTPS خودکار
 
-اگر به‌جای IP یک دامنه وارد کنید و HTTPS خودکار را تأیید کنید، BUB Panel برای همان دامنه:
-
-- شرایط لازم برای صدور Certificate را بررسی می‌کند؛
-- Virtual Host اختصاصی Nginx می‌سازد؛
-- Web App اصلی را پشت Reverse Proxy روی Loopback نگه می‌دارد؛
-- Certificate رایگان Let's Encrypt دریافت می‌کند؛
-- HTTP را به HTTPS ریدایرکت می‌کند؛
-- تمدید خودکار Certificate را فعال می‌کند؛
-- Secure Cookie و رفتار HTTPS را فعال می‌کند؛
-- به Virtual Hostهای نامرتبط Nginx دست نمی‌زند.
-
-نمونه آدرس نهایی:
+اگر دامنه وارد شود و HTTPS خودکار تأیید شود، BUB Panel Virtual Host اختصاصی Nginx را تنظیم می‌کند، Web App را پشت Reverse Proxy نگه می‌دارد، Certificate رایگان Let's Encrypt می‌گیرد، HTTP را به HTTPS ریدایرکت می‌کند و به Virtual Hostهای نامرتبط دست نمی‌زند.
 
 ```text
 https://panel.example.com/
-```
-
-اگر Panel Path انتخاب کرده باشید:
-
-```text
 https://panel.example.com/bub-panel/
 ```
 
-اگر IP وارد شود یا HTTPS خودکار رد شود، نصب‌کننده آدرس HTTP با پورت انتخاب‌شده را نمایش می‌دهد. برای پنل مدیریتی که روی اینترنت در دسترس است استفاده از TLS معتبر توصیه می‌شود.
-
 ### دیتابیس
-
-BUB Panel از دو حالت اصلی پشتیبانی می‌کند:
 
 - **SQLite** با Driver کاملاً Go یعنی `modernc.org/sqlite`.
 - **PostgreSQL** با `pgx/v5` و Connection Pool دائمی.
 
-در Queryهای عادی برنامه، برای هر درخواست Process جداگانه `sqlite3` یا `psql` اجرا نمی‌شود. ابزارهای CLI دیتابیس فقط در عملیات مدیریتی مثل Backup، Migration یا Diagnostic در صورت نیاز استفاده می‌شوند.
-
 ### تشخیص صحیح نصب سرویس‌ها
 
-وجود یک Package در سیستم به معنی نصب‌شدن آن توسط BUB Panel نیست.
-
-مثلاً اگر `/usr/sbin/openvpn` روی سیستم باقی مانده باشد ولی Config و Ownership مربوط به BUB حذف شده باشد، Manager باید نمایش دهد:
-
-```text
-OpenVPN : NOT INSTALLED
-```
-
-Full Uninstall و Remove Service بر اساس Ownership واقعی BUB عمل می‌کنند و نباید سرویس‌ها، Packageها یا Listenerهای نامرتبط را حذف کنند.
+وجود یک Package در سیستم به معنی نصب‌شدن آن توسط BUB Panel نیست. Full Uninstall و Remove Service بر اساس Ownership واقعی BUB عمل می‌کنند و نباید سرویس‌ها، Packageها یا Listenerهای نامرتبط را حذف کنند.
 
 ### امنیت
 
-بخش مدیریتی BUB Panel شامل لایه‌های امنیتی مختلف است، از جمله:
-
-- مدیریت Sessionها؛
-- Login History و Audit Events؛
-- CSRF Protection؛
-- HttpOnly / SameSite Cookie؛
-- Secure Cookie در HTTPS؛
-- Rate Limit برای Login و API؛
-- محافظت در برابر Brute-force؛
-- Security Headerها مثل CSP و Frame Deny؛
-- سطح دسترسی و Scope برای عملیات مدیریتی؛
-- Backup رمزنگاری‌شده؛
-- اجرای Command محدود و Target-aware.
+بخش مدیریتی شامل مدیریت Session، Login History، Audit Events، CSRF Protection، HttpOnly/SameSite Cookie، Secure Cookie در HTTPS، Rate Limit، محافظت Brute-force، Security Headerها، Scope دسترسی، Backup رمزگذاری‌شده و اجرای Command محدود و Target-aware است.
 
 رمز عبور، Private Key، API Token و Recovery Secret نباید وارد Log برنامه شوند.
 
+#### مرکز امنیت
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e47e295e-1b6a-4731-96f5-f2b858523c22" alt="مرکز امنیت BUB Panel" width="820">
+</p>
+
 ### حفظ اطلاعات و Backup
 
-مسیرهای Upgrade و Backup برای حفظ موارد زیر طراحی شده‌اند:
-
-- دیتابیس PostgreSQL یا SQLite؛
-- کاربران و تنظیمات سرویس‌ها؛
-- اطلاعات Nodeها؛
-- تنظیمات BUB Panel؛
-- PKI و CRL مربوط به OpenVPN؛
-- Ownership state سرویس‌های BUB؛
-- اطلاعات لازم برای Restore و Disaster Recovery.
+Upgrade و Backup برای حفظ دیتابیس، کاربران، تنظیمات سرویس‌ها، Nodeها، تنظیمات BUB Panel، PKI/CRL مربوط به OpenVPN، Ownership state و اطلاعات لازم برای Restore/Disaster Recovery طراحی شده‌اند.
 
 در OpenVPN نباید برای Repair کردن، CA/PKI واقعی موجود را با `init-pki` جدید جایگزین کرد.
+
+#### Backup & Restore
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/444d2c7c-eefe-4bf7-a8d0-14faaad44ae8" alt="بکاپ و بازیابی در BUB Panel" width="820">
+</p>
 
 ### آپدیت
 
 آپدیت از داخل **Manager → Update** انجام می‌شود. فایل‌های Release بر اساس معماری سیستم دانلود می‌شوند و قبل از نصب SHA-256 آن‌ها بررسی می‌شود.
-
-نمایش نسخه:
 
 ```bash
 bub-panel --version
@@ -498,8 +495,6 @@ bub-panel-agent --version
 GET /api/health
 GET /api/ready
 ```
-
-`/api/health` سلامت خود برنامه را گزارش می‌دهد. `/api/ready` علاوه بر آن وابستگی دیتابیس را هم بررسی می‌کند و اگر پنل برای پاسخ‌گویی کامل آماده نباشد HTTP `503` برمی‌گرداند.
 
 ### فایل‌های Release رسمی v0.1.60
 
@@ -537,6 +532,6 @@ Free multi-service VPN management for Main + Multi-Node deployments.
 
 ## Manager port-first installation / نصب پورت قبل از پروتکل
 
-When a variable-port service is installed from `BUB-Panel` Manager, the Manager asks for its port **before** package/config/service installation starts. Pressing Enter keeps the safe default. OpenVPN asks `TCP port` first and then `UDP port`; its default is now `1194` for both transports instead of TCP/443. WireGuard, AmneziaWG, Cisco/ocserv, SSTP, SoftEther, and Telegram Proxy use the same port-first flow. Ports `80` and `443` are reserved for the Web/HTTPS endpoint. IKEv2/IPsec (`UDP 500/4500`) and L2TP/IPsec (`UDP 500/4500/1701`) are protocol-fixed and are not prompted.
+When a variable-port service is installed from `BUB-Panel` Manager, the Manager asks for its port **before** package/config/service installation starts. Pressing Enter keeps the safe default. OpenVPN asks `TCP port` first and then `UDP port`; its default is `1194` for both transports instead of TCP/443. WireGuard, AmneziaWG, Cisco/ocserv, SSTP, SoftEther and Telegram Proxy use the same port-first flow. Ports `80` and `443` are reserved for the Web/HTTPS endpoint. IKEv2/IPsec (`UDP 500/4500`) and L2TP/IPsec (`UDP 500/4500/1701`) are protocol-fixed and are not prompted.
 
-در نصب سرویس‌هایی که پورتشان قابل تغییر است از داخل Manager، **قبل از شروع نصب** پورت پرسیده می‌شود. اگر فقط Enter بزنید مقدار پیش‌فرض امن استفاده می‌شود. برای OpenVPN ابتدا `TCP port` و بعد `UDP port` پرسیده می‌شود و دیگر TCP روی `443` پیش‌فرض نیست؛ TCP و UDP هر دو به‌صورت پیش‌فرض `1194` هستند. برای WireGuard، AmneziaWG، Cisco/ocserv، SSTP، SoftEther و Telegram Proxy نیز همین منطق اجرا می‌شود. پورت‌های `80` و `443` برای Web/HTTPS پنل رزرو هستند. IKEv2 و L2TP چون پورت‌های استاندارد ثابت دارند، سؤال پورت ندارند.
+در نصب سرویس‌هایی که پورتشان قابل تغییر است از داخل Manager، **قبل از شروع نصب** پورت پرسیده می‌شود. اگر فقط Enter بزنید مقدار پیش‌فرض امن استفاده می‌شود. برای OpenVPN ابتدا `TCP port` و بعد `UDP port` پرسیده می‌شود و TCP و UDP هر دو به‌صورت پیش‌فرض `1194` هستند. WireGuard، AmneziaWG، Cisco/ocserv، SSTP، SoftEther و Telegram Proxy نیز همین منطق را دارند. پورت‌های `80` و `443` برای Web/HTTPS پنل رزرو هستند. IKEv2 و L2TP چون پورت‌های استاندارد ثابت دارند، سؤال پورت ندارند.
