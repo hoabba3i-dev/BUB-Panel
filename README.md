@@ -10,6 +10,14 @@
 </p>
 
 <p>
+  <a href="https://t.me/bub_tunnel"><img alt="Telegram Channel" src="https://img.shields.io/badge/Telegram_Channel-@bub__tunnel-229ED9?style=for-the-badge&logo=telegram&logoColor=white"></a>
+  <a href="https://t.me/Bubtunnel_support"><img alt="Support" src="https://img.shields.io/badge/Support-@Bubtunnel__support-229ED9?style=for-the-badge&logo=telegram&logoColor=white"></a>
+  <a href="https://app.tonkeeper.com/transfer/UQBW2lkxmJl4ryQaylRz_F3ICbYdJhUjvSqKKq2OeAPnoLsl"><img alt="Donate TON" src="https://img.shields.io/badge/Donate-TON-0098EA?style=for-the-badge&logo=ton&logoColor=white"></a>
+</p>
+
+<sub>TON: <code>UQBW2lkxmJl4ryQaylRz_F3ICbYdJhUjvSqKKq2OeAPnoLsl</code></sub>
+
+<p>
   <a href="#english"><kbd>🇬🇧 English</kbd></a>&nbsp;&nbsp;
   <a href="#persian"><kbd>🇮🇷 فارسی</kbd></a>
 </p>
