@@ -1,0 +1,77 @@
+name: Public Repository CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-tree:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify curated public tree
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          for forbidden in cmd internal vendor dist go.mod go.sum; do
+            [[ ! -e "$forbidden" ]] || { echo "Forbidden private/build path: $forbidden" >&2; exit 1; }
+          done
+
+          if find . -type f \
+            \( -name '*.key' -o -name '*.pem' -o -name '*.p12' -o -name '*.pfx' \
+               -o -name '*.token' -o -name '.env' -o -name '.env.*' \
+               -o -name '*.db' -o -name '*.sqlite' -o -name '*.sqlite3' \
+               -o -name '*.log' -o -name '*.bak' -o -name '*.backup' \) \
+            -not -path './.git/*' -print -quit | grep -q .; then
+            echo 'Sensitive/runtime artifact found in public repository.' >&2
+            exit 1
+          fi
+
+          python3 - <<'PYSCAN'
+          from pathlib import Path
+          needles = [
+              "BEGIN " + "PRIVATE KEY",
+              "BEGIN RSA " + "PRIVATE KEY",
+              "BEGIN OPENSSH " + "PRIVATE KEY",
+              "/mnt/" + "data/",
+              "/data/data/com." + "termux/",
+              "FINAL-FULL-" + "SOURCE",
+              "github_" + "pat_",
+              "gh" + "p_",
+          ]
+          for path in Path('.').rglob('*'):
+              if not path.is_file() or '.git' in path.parts:
+                  continue
+              try:
+                  text = path.read_text(errors='ignore')
+              except Exception:
+                  continue
+              for needle in needles:
+                  if needle in text:
+                      raise SystemExit(f"Private-source or credential marker found in {path}")
+          PYSCAN
+
+      - name: Installer syntax
+        run: bash -n install.sh
+
+      - name: Required public files
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          required=(
+            README.md
+            LICENSE
+            SECURITY.md
+            CHANGELOG.md
+            install.sh
+            docs/ARCHITECTURE.md
+            docs/INSTALLATION.md
+            docs/RELEASE-CHECKLIST.md
+          )
+          for f in "${required[@]}"; do
+            [[ -s "$f" ]] || { echo "Missing or empty required public file: $f" >&2; exit 1; }
+          done

@@ -1,0 +1,40 @@
+# Build and release artifacts
+/dist/
+/release/*.tar.gz
+/release/bub-panel*
+/release/SHA256SUMS
+*.exe
+*.test
+*.out
+
+# Runtime / local state
+*.db
+*.sqlite
+*.sqlite3
+*.log
+/data/
+/state.json
+*.pid
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.token
+/config.local.json
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Temporary archives
+*.tmp
+*.bak
+*.orig
