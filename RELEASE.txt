@@ -1,0 +1,2 @@
+BUB Panel v0.2.0
+Official BUB Panel release.

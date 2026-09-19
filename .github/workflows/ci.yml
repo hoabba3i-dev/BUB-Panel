@@ -1,0 +1,39 @@
+name: Public Repository CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-boundary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Shell syntax
+        run: bash -n install.sh
+
+      - name: Public source boundary
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          for path in cmd internal dist vendor go.mod go.sum; do
+            if [ -e "$path" ]; then
+              echo "Unexpected non-public source path: $path" >&2
+              exit 1
+            fi
+          done
+
+      - name: Private key guard
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if find . -type f \
+            \( -iname '*private*.pem' -o -iname '*private*.key' -o -iname '*id_ed25519*' -o -iname '*id_rsa*' \) \
+            -not -path './.git/*' -print -quit | grep -q .; then
+            echo 'Private key material must not be published.' >&2
+            exit 1
+          fi
