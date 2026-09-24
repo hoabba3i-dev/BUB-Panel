@@ -11,7 +11,7 @@
 
 <p>
   <a href="#donate"><img alt="Donate" src="https://img.shields.io/badge/❤️_Donate-Support-00C8D7?style=for-the-badge"></a>
-  <a href="https://t.me/bub_tunnel"><img alt="Telegram Channel" src="https://img.shields.io/badge/Telegram-Channel-229ED9?style=for-the-badge&logo=telegram&logoColor=white"></a><img alt="Telegram Channel" src="https://img.shields.io/badge/Telegram-Channel-229ED9?style=for-the-badge&logo=telegram&logoColor=white"></a>
+  <a href="https://t.me/bub_tunnel"><img alt="Telegram Channel" src="https://img.shields.io/badge/Telegram-Channel-229ED9?style=for-the-badge&logo=telegram&logoColor=white"></a>
   <a href="https://t.me/Bubtunnel_support"><img alt="Support" src="https://img.shields.io/badge/Telegram-Support-229ED9?style=for-the-badge&logo=telegram&logoColor=white"></a>
 </p>
 
