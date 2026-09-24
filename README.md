@@ -6,7 +6,7 @@
 
 <p>
   <a href="#quick-install"><img alt="Quick Install" src="https://img.shields.io/badge/Quick_Install-00C8D7?style=for-the-badge&logo=linux&logoColor=white"></a>
-  <a href="https://github.com/hoabba3i-dev/BUB-Panel/releases/latest"><img alt="Latest Release" src="https://img.shields.io/badge/Latest_Release-v0.2.0-16A34A?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/hoabba3i-dev/BUB-Panel/releases/latest"><img alt="Latest Release" src="https://img.shields.io/badge/Latest_Release-v0.2.1-16A34A?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
 <p>
@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  <a href="https://github.com/hoabba3i-dev/BUB-Panel/releases"><img alt="Version" src="https://img.shields.io/badge/version-0.2.0-00C8D7?style=flat-square"></a>
+  <a href="https://github.com/hoabba3i-dev/BUB-Panel/releases"><img alt="Version" src="https://img.shields.io/badge/version-0.2.1-00C8D7?style=flat-square"></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Free--Use-00C8D7?style=flat-square"></a>
   <a href="https://github.com/hoabba3i-dev/BUB-Panel/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/hoabba3i-dev/BUB-Panel?style=flat-square&logo=github"></a>
 </p>
@@ -74,6 +74,18 @@ The public repository contains the installer, documentation, release metadata an
 <div align="center">
   <img src="https://github.com/user-attachments/assets/441a4755-1585-4f06-b4f0-9e1742018194" alt="BUB Panel user management" width="720" />
 </div>
+
+### Telegram Sales Bot
+
+BUB Panel includes an integrated Telegram Sales Bot for presenting services and handling the service-order flow from Telegram. Bot configuration and sales content are managed from the Panel, including categories, products/services and payment information.
+
+For the initial setup, use this simple order:
+
+1. Create the required **category** first.
+2. Create the **product/service** and assign it to that category.
+3. Configure and verify the **payment information** used for customer orders.
+
+When multiple panels or nodes are used, keep categories and products assigned to the intended panel so customers see the correct services.
 
 ### Main + Multi-Node
 
@@ -224,6 +236,18 @@ GET /api/ready
   <img src="https://github.com/user-attachments/assets/441a4755-1585-4f06-b4f0-9e1742018194" alt="مدیریت کاربران BUB Panel" width="720" />
 </div>
 
+### ربات فروش تلگرام
+
+BUB Panel دارای **ربات فروش تلگرام** یکپارچه است که برای نمایش سرویس‌ها و مدیریت روند سفارش از داخل تلگرام استفاده می‌شود. دسته‌بندی‌ها، محصولات/سرویس‌ها و اطلاعات پرداخت از داخل پنل مدیریت می‌شوند.
+
+برای راه‌اندازی اولیه کافی است این ترتیب را رعایت کنید:
+
+1. ابتدا **دسته‌بندی** موردنظر را بسازید.
+2. سپس **محصول/سرویس** را ایجاد کرده و داخل همان دسته‌بندی قرار دهید.
+3. در پایان **اطلاعات پرداخت** مورد استفاده برای سفارش کاربران را تنظیم و بررسی کنید.
+
+در حالت چندپنلی یا چندنودی، دسته‌بندی و محصول را برای پنل موردنظر تعریف کنید تا سرویس صحیح به کاربر نمایش داده شود.
+
 ### سرور اصلی و چند نود
 
 یک سرور اصلی می‌تواند هم سرویس‌های خودش و هم چند نود راه دور را مدیریت کند. روی هر نود، عامل BUB Panel و سرویس‌هایی که برای همان نود انتخاب شده‌اند اجرا می‌شوند.
@@ -342,7 +366,7 @@ GET /api/ready
 📢 **Telegram Channel:** [@bub_tunnel](https://t.me/bub_tunnel)  
 💬 **Support:** [@Bubtunnel_support](https://t.me/Bubtunnel_support)
 
-**BUB Panel v0.2.0**  
+**BUB Panel v0.2.1**  
 Free multi-service VPN management for Main + Multi-Node deployments.
 
 </div>
