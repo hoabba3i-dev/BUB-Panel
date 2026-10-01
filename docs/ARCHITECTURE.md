@@ -10,10 +10,10 @@ Main Server
 ├── Controller / API
 ├── Authentication / Security
 ├── PostgreSQL or SQLite
-├── Main-local VPN services
+├── Main-local network services
 └── Remote Nodes
     └── BUB Panel Agent
-        └── Node-local VPN services
+        └── Node-local network services
 ```
 
 ## Main server responsibilities
@@ -30,7 +30,7 @@ The Main server is authoritative for:
 - backup and restore orchestration
 - release/update control
 
-The web process is a control plane. Restarting it must not deliberately terminate healthy VPN daemons.
+The web process is a control plane. Restarting it must not deliberately terminate healthy managed network daemons.
 
 ## Node Agent responsibilities
 
@@ -48,7 +48,7 @@ The Agent is not a separate product. Main and Agent use the same BUB Panel relea
 
 BUB Panel must distinguish between **BUB-owned** and **foreign** system state.
 
-Node add, repair, reclaim and remove operations are scoped to BUB Panel Agent files and BUB-managed service artifacts. They must not stop, disable, remove or reconfigure unrelated services such as third-party VPNs, proxies, Docker workloads or other user applications.
+Node add, repair, reclaim and remove operations are scoped to BUB Panel Agent files and BUB-managed service artifacts. They must not stop, disable, remove or reconfigure unrelated services such as third-party network services, Docker workloads or other user applications.
 
 A listener owned by a foreign service causes the requested BUB service install to fail with a port conflict. It is never resolved by killing the foreign process.
 
