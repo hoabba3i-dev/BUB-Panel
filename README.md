@@ -2,7 +2,7 @@
 
 # BUB Panel
 
-### Free Multi-Service VPN Management Panel · Main + Multi-Node
+### Free Network & Server Management Panel · Main + Multi-Node
 
 <p>
   <a href="#quick-install"><img alt="Quick Install" src="https://img.shields.io/badge/Quick_Install-00C8D7?style=for-the-badge&logo=linux&logoColor=white"></a>
@@ -26,7 +26,7 @@
   <a href="https://github.com/hoabba3i-dev/BUB-Panel/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/hoabba3i-dev/BUB-Panel?style=flat-square&logo=github"></a>
 </p>
 
-**One panel. Multiple VPN protocols. Main server + independently managed nodes.**
+**One control plane. Multiple network services. Main server + independently managed nodes.**
 
 </div>
 
@@ -36,7 +36,7 @@
 
 ## English
 
-BUB Panel is a multi-service VPN management platform for managing VPN services, users, traffic limits, remote nodes and operational tasks from one Web Panel and one interactive terminal Manager.
+BUB Panel is a network and server management platform for centrally administering secure remote-access services, users, traffic policies, remote nodes and operational tasks from one Web Panel and one interactive terminal Manager.
 
 The public repository contains the installer, documentation, release metadata and official runtime assets. The complete Go source tree is not published in the public Git history.
 
@@ -48,7 +48,7 @@ The public repository contains the installer, documentation, release metadata an
 
 ## Features
 
-### VPN and proxy services
+### Managed network services
 
 | Service | Management scope |
 |---|---|
@@ -90,7 +90,7 @@ When multiple panels or nodes are used, keep categories and products assigned to
 ### Main + Multi-Node
 
 - One Main Panel manages local services and remote BUB Panel Nodes.
-- Remote Nodes run the BUB Panel Agent and the VPN services selected for that Node.
+- Remote Nodes run the BUB Panel Agent and the network services selected for that Node.
 - Service state and operations are isolated by target and service.
 - The same port may be used on different Nodes.
 - Port conflicts are checked on the selected target and transport.
@@ -123,10 +123,10 @@ BUB Panel Main
 ├── Web Panel
 ├── Controller / API
 ├── Database
-├── Main Server VPN Services
+├── Main Server Network Services
 └── Managed Nodes
     ├── BUB Panel Agent
-    └── Node-local VPN Services
+    └── Node-local Network Services
 ```
 
 BUB Panel maintenance operations are scoped to BUB Panel-owned assets. Unrelated server software is outside BUB Panel ownership.
@@ -135,7 +135,7 @@ BUB Panel maintenance operations are scoped to BUB Panel-owned assets. Unrelated
 
 - Linux server with `systemd`.
 - Ubuntu/Debian or a supported `apt` / `dnf` / `yum` environment.
-- Root access for installation and VPN service management.
+- Root access for installation and network service management.
 - `amd64` or `arm64` architecture.
 - Internet access during initial provisioning.
 - SSH reachability from Main to remote Nodes when Multi-Node is used.
@@ -201,7 +201,7 @@ GET /api/ready
 
 ## فارسی
 
-**BUB Panel** یک پنل برای مدیریت چند سرویس وی‌پی‌ان است. با یک پنل وب و یک مدیر ترمینالی می‌توان سرور اصلی، نودهای راه دور، کاربران، حجم مصرفی، زمان اعتبار و سرویس‌های شبکه را مدیریت کرد.
+**BUB Panel** یک پنل تخصصی مدیریت شبکه و سرور است. با یک پنل وب و یک مدیر ترمینالی می‌توان سرور اصلی، نودهای راه دور، کاربران، سیاست‌های مصرف، زمان اعتبار و سرویس‌های دسترسی شبکه را به‌صورت متمرکز مدیریت کرد.
 
 مخزن عمومی شامل نصب‌کننده، مستندات و فایل‌های رسمی انتشار است. سورس کامل پروژه در تاریخچه عمومی گیت منتشر نمی‌شود.
 
@@ -281,10 +281,10 @@ BUB Panel دارای **ربات فروش تلگرام** یکپارچه است ک
 ├── پنل وب
 ├── کنترل‌کننده و API
 ├── پایگاه داده
-├── سرویس‌های VPN سرور اصلی
+├── سرویس‌های شبکه سرور اصلی
 └── نودهای مدیریت‌شده
     ├── عامل BUB Panel
-    └── سرویس‌های VPN همان نود
+    └── سرویس‌های شبکه همان نود
 ```
 
 عملیات نگهداری فقط روی اجزایی انجام می‌شود که متعلق به BUB Panel باشند. نرم‌افزارها و سرویس‌های نامرتبط سرور خارج از محدوده مدیریت BUB Panel هستند.
@@ -367,6 +367,6 @@ GET /api/ready
 💬 **Support:** [@Bubtunnel_support](https://t.me/Bubtunnel_support)
 
 **BUB Panel v0.2.1**  
-Free multi-service VPN management for Main + Multi-Node deployments.
+Free network & server management for Main + Multi-Node deployments.
 
 </div>
