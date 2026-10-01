@@ -370,3 +370,9 @@ GET /api/ready
 Free network & server management for Main + Multi-Node deployments.
 
 </div>
+
+---
+
+## Disclaimer
+
+BUB Panel is developed for legitimate network and server administration, educational purposes, and secure network communications. Users are responsible for ensuring that their deployment and use of the software complies with all applicable laws, regulations, and third-party policies. The developers do not endorse or encourage unauthorized or unlawful use of the software.
