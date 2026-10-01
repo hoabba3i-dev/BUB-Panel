@@ -49,4 +49,4 @@ Before a significant upgrade:
 2. Verify the backup can be read/decrypted.
 3. Confirm database connectivity.
 4. Keep the previous release assets and checksum file available.
-5. Avoid replacing existing VPN PKI or unrelated system service configuration.
+5. Avoid replacing existing service PKI or unrelated system service configuration.
