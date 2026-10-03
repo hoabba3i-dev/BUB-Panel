@@ -32,7 +32,7 @@ step 'Verifying SHA256 checksums';(cd "$WORK";grep -E "  (${RUNTIME}|${PANEL}|${
 PUBKEY="$WORK/release-ed25519-public.pem"
 cat >"$PUBKEY" <<'BUBPUBKEY'
 -----BEGIN PUBLIC KEY-----
-MCowBQYDK2VwAyEAm3f2WwMktdRWQCPGBGDvoLjtXnVP4WZfCV0hs8H1SW0=
+MCowBQYDK2VwAyEAAYKdp+0LHE+jfWwxbQgcOVI2YLK9moLCP/EQrEa4vbc=
 -----END PUBLIC KEY-----
 BUBPUBKEY
 MANIFEST="$WORK/signed-manifest.txt"; SIGBIN="$WORK/release-signature.bin"
